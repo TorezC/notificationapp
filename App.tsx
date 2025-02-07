@@ -29,15 +29,9 @@ const App = () => {
         }
     }
 
-    const getToken = async() => {
-        const token = await messaging().getToken()
-        console.log('Token =', token);
-        
-    }
-console.log('jj')
+   
     useEffect(()=> {
         requestUserPermission()
-        getToken()
     }, [])
   return (
     <View>
